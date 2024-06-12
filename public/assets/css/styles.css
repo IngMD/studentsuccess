@@ -1,0 +1,61 @@
+/* Estilos generales */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px; /* Altura del pie de página */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #248FD1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+/* Estilos para tarjetas */
+.card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Estilos para botones */
+.btn-primary {
+    background-color: #248FD1;
+    border-color: #248FD1;
+}
+
+.btn-primary:hover {
+    background-color: #1e7ab3;
+    border-color: #1e7ab3;
+}
+
+/* Estilos para pie de página */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Altura del pie de página */
+    line-height: 60px; /* Centra verticalmente el texto dentro del pie de página */
+    background-color: #f8f9fa;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

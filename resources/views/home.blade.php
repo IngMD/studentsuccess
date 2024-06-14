@@ -42,6 +42,7 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu">
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#uploadInfoModal">Subir Información</a>
+                        <a class="dropdown-item" href="{{ route('assets.manage') }}">Administrar Activos</a>
                         <a class="dropdown-item" href="#" data-toggle="modal" data-target="#confirmLogoutModal">Cerrar Sesión</a>
                     </div>
                 </li>

@@ -22,5 +22,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
 Route::post('/upload-info', [UploadInfoController::class, 'store'])->name('upload.info');
+Route::get('/manage-assets', [UploadInfoController::class, 'manage'])->name('assets.manage');
+Route::get('/descargar/{file}', 'App\Http\Controllers\DownloadController@descargarArchivo')->name('descargar.archivo');
+

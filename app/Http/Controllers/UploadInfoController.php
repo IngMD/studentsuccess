@@ -35,4 +35,18 @@ class UploadInfoController extends Controller
         // Redirige de vuelta al dashboard con un mensaje de éxito
         return redirect()->back()->with('success', 'Información y archivo subidos correctamente.');
     }
+
+     
+        public function manage(Request $request)
+        {
+            $assets = Asset::query();
+
+            if ($request->filled('filtroCarrera')) {
+                $assets->where('university_course', $request->input('filtroCarrera'));
+            }
+
+            $assets = $assets->get();
+
+            return view('manage', compact('assets'));
+        }
 }

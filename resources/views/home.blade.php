@@ -112,6 +112,20 @@
                                             <input type="date" class="form-control" id="date" name="date" required>
                                         </div>
                                         <div class="form-group">
+                                            <label for="university_course">Carrera Universitaria:</label>
+                                            <select class="form-control" id="university_course" name="university_course" required>
+                                                <option value="">Seleccione una carrera</option>
+                                                <option value="Ingeniería Informática">Ingeniería Informática</option>
+                                                <option value="Medicina">Medicina</option>
+                                                <option value="Derecho">Derecho</option>
+                                                <option value="Administración de Empresas">Administración de Empresas</option>
+                                                <option value="Ingeniería Civil">Ingeniería Civil</option>
+                                                <option value="Psicología">Psicología</option>
+                                                <option value="Arquitectura">Arquitectura</option>
+                                                <!-- Agrega más opciones según sea necesario -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
                                             <label for="file">Subir Archivo:</label>
                                             <input type="file" class="form-control-file" id="file" name="file" required>
                                         </div>

@@ -14,6 +14,7 @@ class UploadInfoController extends Controller
             'title' => 'required|string|max:255',
             'authors' => 'required|string|max:255',
             'date' => 'required|date',
+            'university_course' => 'required|string|max:255',
             'file' => 'required|file|max:10240', // máximo 10MB
         ]);
 
@@ -27,6 +28,7 @@ class UploadInfoController extends Controller
         $asset->title = $request->title;
         $asset->authors = $request->authors;
         $asset->date = $request->date;
+        $asset->university_course = $request->university_course;
         $asset->file_path = $path; // guarda la ruta del archivo en la base de datos
         $asset->save();
 
